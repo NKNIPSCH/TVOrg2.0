@@ -71,7 +71,7 @@ def organize_file(file_path, target_base, dry_run=False):
         print(f"[Dry-run] Would move: {file_path} -> {dest_file_path}")
     else:
         shutil.move(file_path, dest_file_path)
-        log_action(f"Moved: {file_path} -> {dest_file_path}")
+        log_action("MOVE", file_path, dest_file_path)
         print(f"Moved: {file_path} -> {dest_file_path}")
 
     return dest_file_path
