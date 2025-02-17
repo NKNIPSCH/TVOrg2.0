@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script organizes TV-related files into structured directories based on metadata extracted from filenames. It supports detecting TV shows, documentaries, sports, and other categorized content, placing them into appropriate folders.
+This script organizes TV-related files into structured directories based on metadata extracted from filenames. It supports detecting TV shows, documentaries, sports, and other categorized content, placing them into appropriate folders while ensuring existing folder names remain unchanged.
 
 ## Features
 
@@ -12,6 +12,7 @@ This script organizes TV-related files into structured directories based on meta
 - **Logging**: Tracks all moves and deletions for review.
 - **Undo Support**: Keeps a log of operations to allow rollbacks.
 - **Automatic Cleanup**: Removes empty folders after organization.
+- **Preserve Folder Names**: Ensures that existing folder names remain unchanged while reorganizing files.
 
 ## Requirements
 
@@ -46,7 +47,7 @@ python3 undo.py
 
 ## Folder Structure
 
-The script organizes files into the following hierarchy:
+The script organizes files into the following hierarchy while preserving existing folder names:
 
 ```
 TV_Organized/
@@ -83,6 +84,6 @@ After organization, empty folders in the source directory are automatically dele
 
 ## License
 
-This script is provided as-is without warranty. Modify and use it as needed.
+This script is licensed under a permissive license that allows anyone to use, modify, and distribute the software for non-commercial purposes. Selling this software for profit is prohibited. Modifications may be required to suit specific use cases, as this project is highly customized for personal use.
 
 
